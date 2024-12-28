@@ -18,11 +18,12 @@ Philippine Seismic Network. Philippine Standard Time (PST) is eight hours ahead 
 
 ### **Setup**
 1. Clone the repository
-2. Create and activate a virtual environment
-3. `pip install -r requirements.txt`
-4. (Optional) `jupyter notebook` or `jupyter lab`
+2. Create a virtual environment
+3. Activate the virtual environment: `env\Scripts\activate`
+4. `pip install -r requirements.txt`
+5. (Optional) `jupyter notebook` or `jupyter lab`
 
 ### **How to Run**
-- To run data exploration: `notebooks/01_data_exploration.ipynb`
+- To run exploratory data analysis (EDA): `notebooks/01_data_exploration.ipynb`
 - To run clustering: `notebooks/02_clustering.ipynb` 
 - OR use the scripts in `src/` if you prefer a non-notebook workflow.
