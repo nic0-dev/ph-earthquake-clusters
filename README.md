@@ -10,11 +10,14 @@ Philippine Seismic Network. Philippine Standard Time (PST) is eight hours ahead 
 
 #### **Dataset**
 
-[1] BwandoWando. (2024). 🇵🇭 Philippine Earthquakes (from PHIVOLCS) [Data set]. Kaggle. https://doi.org/10.34740/KAGGLE/DS/5555087 <br>
-[2] https://www.kaggle.com/datasets/bwandowando/philippine-earthquakes-from-phivolcs <br>
+[1] BwandoWando. (2024). Philippine Earthquakes (from PHIVOLCS) [Data set]. Kaggle. https://doi.org/10.34740/KAGGLE/DS/5555087 <br>
+[2] https://simplemaps.com/gis/country/ph <br>
 [3] https://earthquake.phivolcs.dost.gov.ph/
+[4] https://www.foi.gov.ph/requests/shapefile-of-philippine-fault-system/
 
-### **Project Structure**
+#### **Geomatics Services Request**
+
+The Geomatics and Hazard Assessment Services Section (GeomHASS) of the Geology, Geophysics R&D Division produces and distributes processed Geographic Information System (GIS)- and Remote Sensing (RS)- related information to PHIVOLCS stakeholders.
 
 ### **Setup**
 1. Clone the repository
@@ -26,4 +29,3 @@ Philippine Seismic Network. Philippine Standard Time (PST) is eight hours ahead 
 ### **How to Run**
 - To run exploratory data analysis (EDA): `notebooks/01_data_exploration.ipynb`
 - To run clustering: `notebooks/02_clustering.ipynb` 
-- OR use the scripts in `src/` if you prefer a non-notebook workflow.
