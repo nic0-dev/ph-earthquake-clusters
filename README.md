@@ -23,18 +23,13 @@ Below are some representative figures from the project:
 
 <table>
   <tr>
-    <td><img src="figures/fig1-1.png" alt="Distribution and Correlation Plots" width="600"></td>
+    <td><img src="figures/fig1-1.png" alt="Distribution and Correlation Plots" width="545"></td>
     <td rowspan="2"><img src="figures/fig1-7.png" alt="KDE Plot" width="500"></td>
   </tr>
   <tr>
-    <td><img src="figures/fig1-2.png" alt="Spatial Analysis" width="600"></td>
+    <td><img src="figures/fig1-2.png" alt="Spatial Analysis" width="545"></td>
   </tr>
 </table>
-
-
-| ![Distribution and Correlation Plots](figures/fig1-1.png) | ![KDE Plot](figures/fig1-7.png) |
-|-----------------------------------------------------------|----------------------------------|
-| ![Spatial Analysis](figures/fig1-2.png)                   |                                  |
 
 ### **Setup**
 1. Clone the repository
