@@ -69,38 +69,3 @@ def load_model(model_path):
       The loaded KMeans model.
   """
   return joblib.load(model_path)
-
-def main():
-  """
-  A simple command-line interface to run K-Means on a CSV file of scaled data.
-  This is optional; you can remove or modify if you prefer to call run_kmeans from a notebook.
-  """
-  parser = argparse.ArgumentParser(description="Run K-Means clustering on scaled CSV data.")
-  parser.add_argument("--csv", type=str, required=True,
-                      help="Path to the CSV file containing scaled data (numeric features only).")
-  parser.add_argument("--k", type=int, default=3,
-                      help="Number of clusters (default=3).")
-  parser.add_argument("--save", type=str, default="",
-                      help="Path to save the trained model (optional).")
-
-  args = parser.parse_args()
-  data_path = args.csv
-  k = args.k
-  save_path = args.save
-
-  # 1) Load scaled data from CSV
-  X_scaled = pd.read_csv(data_path).values  # all columns are numeric
-
-  # 2) Run K-Means
-  kmeans_model, labels, sse, sil = run_kmeans(X_scaled, n_clusters=k)
-
-  print(f"K-Means finished with k={k}")
-  print(f"SSE (Inertia) = {sse:.2f}")
-  print(f"Silhouette Score = {sil:.3f}")
-
-  # 3) Optionally save model
-  if save_path:
-      save_model(kmeans_model, save_path)
-
-if __name__ == "__main__":
-  main()
